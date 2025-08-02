@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora con Historial</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculadora">
+    <h1>Calculadora</h1>
+    <div class="inputs">
+      <input type="number" id="num1" placeholder="Número 1" />
+      <input type="number" id="num2" placeholder="Número 2" />
+    </div>
+
+    <div class="botones">
+      <button onclick="operar('+')">+</button>
+      <button onclick="operar('-')">−</button>
+      <button onclick="operar('*')">×</button>
+      <button onclick="operar('/')">÷</button>
+    </div>
+
+    <div class="resultado" id="resultado">Resultado: </div>
+
+    <h2>Historial</h2>
+    <ul id="historial"></ul>
+    <button onclick="limpiarHistorial()" class="limpiar">Limpiar Historial</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
